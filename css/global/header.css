@@ -1,5 +1,5 @@
 .header-bg {
-  background-color: #000000;
+  background-color: var(--black);
 }
 
 .header {
@@ -22,7 +22,6 @@
 }
 
 .header-menu a {
-  color: #fff;
   display: inline-block;
   padding: 16px 0px;
   font-family: Poppins;
@@ -37,7 +36,7 @@
   display: block;
   height: 2px;
   width: 0px;
-  background: #e83c0e;
+  background: var(--orange-3);
   margin-top: 4px;
   transition: 0.3s;
   position: absolute;
@@ -52,7 +51,7 @@
   display: block;
   height: 2px;
   width: 0px;
-  background: #d70a6e;
+  background: var(--pink-3);
   margin-top: 4px;
   transition: 0.3s;
   position: absolute;
@@ -67,7 +66,7 @@
   display: block;
   height: 2px;
   width: 0px;
-  background: #138dc3;
+  background: var(--blue-3);
   margin-top: 4px;
   transition: 0.3s;
   position: absolute;
@@ -82,7 +81,7 @@
   display: block;
   height: 2px;
   width: 0px;
-  background: #517500;
+  background: var(--green-3);
   margin-top: 4px;
   transition: 0.3s;
   position: absolute;
@@ -97,12 +96,12 @@
     gap: 20px;
   }
   .header-menu a {
-    background: #111;
+    background: var(--black);
     padding: 12px 16px;
     border-radius: 4px;
   }
   .header-menu a:hover {
-    background: #2f2f2f;
+    background: var(--gray-5);
   }
   #skates:after {
     display: none;

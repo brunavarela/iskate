@@ -5,6 +5,7 @@
 
 /* Utils */
 @import "./utils/typography.css";
+@import "./utils/colors.css";
 
 /* Home */
 @import "./home/intro.css"
