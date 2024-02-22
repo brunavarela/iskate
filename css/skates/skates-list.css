@@ -1,0 +1,96 @@
+.skates-list {
+  padding-top: 80px;
+  padding-bottom: 120px;
+}
+
+.skates-list h2 {
+  margin-bottom: 40px;
+  box-sizing: border-box;
+  max-width: 1200px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.skates-list ul {
+  display: flex;
+  gap: 40px;
+  padding: 0 20px 20px 20px;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow-x: auto;
+}
+
+.skates-list li {
+  min-width: 280px;
+}
+
+.skates-list a {
+  display: block;
+}
+
+.skates-list img {
+  margin-bottom: 16px;
+}
+
+.skates-list h3 {
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+}
+
+#born::before {
+  content: "";
+  display: inline-block;
+  height: 8px;
+  width: 12px;
+  margin-right: 8px;
+  background-color: var(--orange-3);
+  transition: width 0.2s;
+}
+
+#rocket::before {
+  content: "";
+  display: inline-block;
+  height: 8px;
+  width: 12px;
+  margin-right: 8px;
+  background-color: var(--blue-3);
+  transition: width 0.2s;
+}
+
+#cyberpunk::before {
+  content: "";
+  display: inline-block;
+  height: 8px;
+  width: 12px;
+  margin-right: 8px;
+  background-color: var(--pink-3);
+  transition: width 0.2s;
+}
+
+a:hover #born::before {
+  width: 24px;
+}
+a:hover #rocket::before {
+  width: 24px;
+}
+a:hover #cyberpunk::before {
+  width: 24px;
+}
+
+.skates-list li span {
+  margin-left: 20px;
+}
+
+@media (max-width: 800px) {
+  .skates-list {
+    padding-bottom: 60px;
+  }
+
+  .skates-list ul {
+    gap: 20px;
+  }
+}
