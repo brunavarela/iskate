@@ -12,7 +12,6 @@
 .tech-img img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
   object-position: left;
 }
 
@@ -57,7 +56,7 @@
   margin-bottom: 8px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .tech-bg {
     box-shadow: initial;
   }
