@@ -1,0 +1,42 @@
+.statement-bg {
+  background-color: var(--pink-3);
+}
+
+.statement {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.statement img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: -150px;
+}
+
+.statement-content {
+  padding-top: 160px;
+  padding-bottom: 160px;
+}
+
+.statement-content > span {
+  display: block;
+  padding-top: 20px;
+}
+
+@media (max-width: 800px) {
+  .statement {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .statement img {
+    top: -50px;
+  }
+
+  .statement-content {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+}

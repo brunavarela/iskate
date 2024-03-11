@@ -23,13 +23,6 @@
   background: linear-gradient(#fc7859, #f93c0e);
 }
 
-@media (max-width: 600px) {
-  .button {
-    padding: 12px 16px;
-    font-size: 1rem;
-  }
-}
-
 .link {
   display: inline-block;
   color: var(--green-3);
@@ -46,4 +39,15 @@
 
 .link:hover {
   color: var(--gray-0);
+}
+
+@media (max-width: 600px) {
+  .button {
+    padding: 12px 16px;
+    font-size: 1rem;
+  }
+
+  .link {
+    font-size: 1rem;
+  }
 }

@@ -50,5 +50,7 @@
 
   .intro img {
     width: 100%;
+    position: relative;
+    bottom: -50px;
   }
 }
