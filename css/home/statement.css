@@ -16,8 +16,33 @@
 }
 
 .statement-content {
-  padding-top: 160px;
-  padding-bottom: 160px;
+  padding: 40px 40px 80px 80px;
+  align-self: center;
+}
+
+.statement-content p {
+  max-width: 32ch;
+  font-family: Merriweather, serif;
+  font-style: italic;
+  font-weight: 900;
+  margin-bottom: 32px;
+  position: relative;
+}
+
+.statement p::before,
+.statement p::after {
+  font-size: 5rem;
+  color: var(--pink-1);
+  position: absolute;
+}
+
+.statement p::before {
+  content: "“";
+  left: -50px;
+  top: -20px;
+}
+.statement p::after {
+  content: "”";
 }
 
 .statement-content > span {
@@ -28,7 +53,7 @@
 @media (max-width: 800px) {
   .statement {
     grid-template-columns: 1fr;
-    gap: 16px;
+    text-align: center;
   }
 
   .statement img {
@@ -36,7 +61,7 @@
   }
 
   .statement-content {
-    padding-top: 8px;
-    padding-bottom: 8px;
+    padding: 40px 20px;
+    justify-self: center;
   }
 }
