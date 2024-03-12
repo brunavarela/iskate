@@ -1,0 +1,22 @@
+.insurance-bg {
+  background-color: var(--gray-6);
+}
+
+.insurance h2 {
+  position: relative;
+  top: -640px;
+}
+
+@media (max-width: 800px) {
+  .insurance h2 {
+    position: relative;
+    top: -210px;
+  }
+}
+
+@media (min-width: 800px) {
+  .insurance h2 {
+    position: relative;
+    top: -600px;
+  }
+}

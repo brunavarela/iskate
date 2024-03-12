@@ -12,7 +12,7 @@
 @import "./home/tech.css";
 @import "./home/partners.css";
 @import "./home/statement.css";
+@import "./home/insurance.css";
 
 /* Skates */
-@import "./skates/skates-list.css"
-
+@import "./skates/skates-list.css";
