@@ -2,6 +2,7 @@
 @import "./utils/components.css";
 
 @import "./global/header.css";
+@import "./global/footer.css";
 
 /* Utils */
 @import "./utils/typography.css";
