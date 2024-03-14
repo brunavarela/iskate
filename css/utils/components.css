@@ -84,3 +84,48 @@
     font-size: 1rem;
   }
 }
+
+/* titulos internos */
+.terms-title-bg,
+.contact-title-bg,
+.budget-title-bg,
+.insurance-title-bg,
+.skates-title-bg {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--gray-4);
+}
+
+.contact-title-bg {
+  background-color: var(--green-4);
+}
+.budget-title-bg {
+  background-color: var(--blue-4);
+}
+.insurance-title-bg {
+  background-color: var(--pink-4);
+}
+.skates-title-bg {
+  background-color: var(--orange-4);
+}
+
+.title p {
+  margin-bottom: 4px;
+}
+
+@media (max-width: 800px) {
+  .terms-title-bg,
+  .contact-title-bg,
+  .budget-title-bg,
+  .insurance-title-bg,
+  .skates-title-bg {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .title p {
+    font-size: 1rem;
+    text-transform: lowercase;
+    font-weight: 400;
+  }
+}
