@@ -17,6 +17,7 @@
 
 /* Skates */
 @import "./skates/skates-list.css";
+@import "./skates/skates.css";
 
 /* insurance */
 @import "./insurance/insurance.css";

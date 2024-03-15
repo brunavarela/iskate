@@ -93,20 +93,20 @@
 .skates-title-bg {
   padding-top: 60px;
   padding-bottom: 60px;
-  background-color: var(--gray-4);
+  background-color: var(--gray-6);
 }
 
 .contact-title-bg {
-  background-color: var(--green-4);
+  background-color: var(--green-3);
 }
 .budget-title-bg {
-  background-color: var(--blue-4);
+  background-color: var(--blue-3);
 }
 .insurance-title-bg {
-  background-color: var(--pink-4);
+  background-color: var(--pink-3);
 }
 .skates-title-bg {
-  background-color: var(--orange-4);
+  background-color: var(--orange-3);
 }
 
 .title p {

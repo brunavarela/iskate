@@ -1,0 +1,59 @@
+.skates-bg:nth-child(even) {
+  background-color: var(--black);
+}
+
+.skates {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.skates-img {
+  display: grid;
+}
+
+.skates-img img {
+  grid-area: 1/1;
+}
+
+.skates-img span {
+  grid-area: 1/1;
+  place-self: start end;
+  background-color: var(--black);
+  display: inline-block;
+  margin-top: 20px;
+  padding: 8px 16px 8px 8px;
+  border-radius: 5px 0 0 5px;
+}
+
+.skates-content {
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+
+.skates h2,
+.skates p {
+  grid-column: 1/-1;
+}
+
+.skates h2 {
+  margin-bottom: 20px;
+}
+
+#born::before {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 8px;
+  margin-bottom: 8px;
+}
+
+.skates p {
+  margin-bottom: 32px;
+}
+
+.skates a {
+  place-self: end;
+}
