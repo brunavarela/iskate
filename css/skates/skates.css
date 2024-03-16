@@ -1,10 +1,13 @@
-.skates-bg:nth-child(even) {
+.skates-bg:nth-child(odd) {
   background-color: var(--black);
 }
 
 .skates {
+  /* background-image: url("../../assets/img/ramp-pattern/rampa-orange-skates.png"); */
+  
   display: grid;
   grid-template-columns: 1fr 1fr;
+  align-items: center;
   gap: 40px;
   padding-top: 60px;
   padding-bottom: 60px;
@@ -30,16 +33,13 @@
 
 .skates-content {
   display: grid;
-  grid-template-columns: 1fr auto;
+  grid-template-columns: 1fr;
 }
 
 .skates h2,
 .skates p {
   grid-column: 1/-1;
-}
-
-.skates h2 {
-  margin-bottom: 20px;
+  padding-bottom: 40px;
 }
 
 #born::before {
@@ -50,10 +50,24 @@
   margin-bottom: 8px;
 }
 
-.skates p {
-  margin-bottom: 32px;
+.skates a {
+  place-self: start;
 }
 
-.skates a {
-  place-self: end;
+.skates ul {
+  padding-bottom: 40px;
+}
+
+.skates li {
+  display: flex;
+  align-items: center;
+}
+
+.skates li + li {
+  margin-top: 16px;
+}
+
+.skates-content img {
+  width: 24px;
+  margin-right: 8px;
 }
