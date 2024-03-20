@@ -1,0 +1,65 @@
+.benefits-bg {
+  background-color: var(--black);
+}
+
+.benefits {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.benefits h2 {
+  margin-bottom: 60px;
+}
+
+.benefits ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, max-content));
+  gap: 40px 80px;
+}
+
+.benefits h3,
+.benefits img {
+  margin-bottom: 8px;
+}
+
+.benefits h3::after {
+  content: "";
+  display: inline-block;
+  width: 34px;
+  height: 10px;
+  margin-left: 12px;
+  background: url("../../assets/icons/lists/golden-list.svg");
+  background-repeat: no-repeat;
+}
+
+#reparo::after {
+  content: "";
+  display: inline-block;
+  width: 34px;
+  height: 10px;
+  margin-left: 12px;
+  background: url("../../assets/icons/lists/two-checks.svg");
+  background-repeat: no-repeat;
+}
+
+#rastreio::after {
+  content: "";
+  display: inline-block;
+  width: 34px;
+  height: 10px;
+  margin-left: 12px;
+  background: url("../../assets/icons/lists/two-checks.svg");
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 800px) {
+  .benefits {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .benefits h2 {
+    margin-bottom: 40px;
+  }
+  .benefits ul {
+    gap: 20px;
+  }
+}
