@@ -32,20 +32,13 @@
 .skates-content {
   display: grid;
   grid-template-columns: 1fr;
+  align-content: start;
 }
 
 .skates h2,
 .skates p {
   grid-column: 1/-1;
   padding-bottom: 40px;
-}
-
-#born::before {
-  content: "";
-  display: block;
-  width: 12px;
-  height: 8px;
-  margin-bottom: 8px;
 }
 
 .skates a {
@@ -68,4 +61,29 @@
 .skates-content img {
   width: 24px;
   margin-right: 8px;
+}
+
+@media (max-width: 800px) {
+  .skates {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .skates-content {
+    grid-template-columns: 1fr;
+  }
+
+  .skates ul {
+    font-size: 1rem;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 32px;
+  }
+
+  .skates a {
+    place-self: start;
+  }
 }
