@@ -1,0 +1,65 @@
+.ask {
+  padding-bottom: 120px;
+  padding-top: 120px;
+}
+
+.ask h2 {
+  margin-bottom: 60px;
+}
+
+.ask dl > div {
+  padding: 20px;
+  border-radius: 4px;
+}
+
+.ask dl > div:nth-child(odd) {
+  background-color: var(--gray-0);
+}
+
+.ask dt {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.ask dt::before {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 32px;
+  background-image: url("../../assets/icons/skates/skate-green-full.svg");
+  background-size: 8px;
+  background-repeat: no-repeat;
+}
+
+.ask dt::after {
+  content: "";
+  display: inline-block;
+  width: 14px;
+  height: 6px;
+  background: url("../../assets/icons/general/up-asks-box.svg");
+  background-repeat: no-repeat;
+  transition: 0.3s;
+}
+
+.ask dt:hover::after {
+  transform: rotate(180deg);
+}
+
+.ask dd {
+  padding-left: 20px;
+  padding-top: 16px;
+  max-width: 80ch;
+}
+
+@media (max-width: 800px) {
+  .ask {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .ask h2 {
+    margin-bottom: 40px;
+  }
+}
